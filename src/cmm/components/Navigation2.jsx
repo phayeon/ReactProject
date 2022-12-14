@@ -18,10 +18,11 @@ const Navigation2 = () => {
         >
             <BottomNavigationAction label="Home" icon={<FavoriteIcon/>} component={Link} to="/home"/>
             <BottomNavigationAction label="Counter" icon={<FavoriteIcon/>} component={Link} to="/Counter"/>
-            <BottomNavigationAction label="todos" icon={<FavoriteIcon/>} component={Link} to="/todos"/>
-            <BottomNavigationAction label="signup" icon={<FavoriteIcon/>} component={Link} Link to="/signup"/>
-            <BottomNavigationAction label="login" icon={<FavoriteIcon/>} component={Link} Link to="/login"/>
-            <BottomNavigationAction label="뇌졸중" icon={<FavoriteIcon/>} component={Link} Link to="/stroke"/>
+            <BottomNavigationAction label="Todos" icon={<FavoriteIcon/>} component={Link} to="/todos"/>
+            <BottomNavigationAction label="Signup" icon={<FavoriteIcon/>} component={Link} Link to="/signup"/>
+            <BottomNavigationAction label="Login" icon={<FavoriteIcon/>} component={Link} Link to="/login"/>
+            <BottomNavigationAction label="Stroke" icon={<FavoriteIcon/>} component={Link} Link to="/stroke"/>
+            <BottomNavigationAction label="Iris" icon={<FavoriteIcon/>} component={Link} Link to="/iris"/>
         </BottomNavigation>
         </Box>
     );

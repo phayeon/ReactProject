@@ -3,7 +3,7 @@ import {Navigation2, Counter, Footer} from "cmm"
 import {Schedule} from "cop"
 import {LoginForm, SignUp} from "uat"
 import fashion from 'images/fashion.png'
-import Stroke from "movie/components/Sroke"
+import { Stroke, Iris } from "movie"
 
 
 const Home = () => {
@@ -26,12 +26,13 @@ const Home = () => {
                 <Route path="/login" element={<LoginForm/>}></Route>
                 <Route path="/signup" element={<SignUp/>}></Route>
                 <Route path="/stroke" element={<Stroke/>}></Route>
+                <Route path="/iris" element={<Iris/>}></Route>
             </Routes>
             </td>
         </tr>
         <tr>
             <td>
-                <img src={fashion} style={imageSize}/>
+                <img src={fashion} style={imageSize} alt="이미지"/>
             </td>
         </tr>
         <tr style={{ width: "100%", height: "20%", border: "1px solid black"}}>
