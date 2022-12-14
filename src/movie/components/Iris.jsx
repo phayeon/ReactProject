@@ -17,8 +17,8 @@ const Iris = () => {
         alert(`입력하신 정보는 \n ${JSON.stringify(Request)} \n 이 맞습니까?`)
         irisPost(Request)
         .then((res) => {
-            console.log(`response is ${res.config.data}`)
-            localStorage.setItem('token', JSON.stringify(res.config.data))
+            console.log(`response is ${res.data.result}`)
+            localStorage.setItem('token', JSON.stringify(res.data.result))
         })
         .catch((err) => {
             console.log(err)
