@@ -41,7 +41,6 @@ const Iris = () => {
         <input type="text" name="pl" placeholder="꽃잎 길이" onChange={onChange}></input><br/>
         <input type="text" name="pw" placeholder="꽃잎 넓이" onChange={onChange}></input>
         <button onClick={onClick}>입력</button>
-
     </body>
     )
 }
