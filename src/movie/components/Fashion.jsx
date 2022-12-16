@@ -3,7 +3,7 @@ import { useState } from "react"
 
 const Fashion = () => {
     const [inputs, setInputs] = useState({})
-    const {test_num} = inputs
+    const {get_num, post_num} = inputs
     const onChange = e => {
         e.preventDefault()
         const {value, name} = e.target 
@@ -12,8 +12,8 @@ const Fashion = () => {
 
     const postClick = e => {
         e.preventDefault()
-        alert(`입력하신 정보는 \n ${JSON.stringify(test_num)} \n 이 맞습니까?`)
-        fashionPost(test_num)
+        alert(`입력하신 정보는 \n ${JSON.stringify(post_num)} \n 이 맞습니까?`)
+        fashionPost(post_num)
         .then((res) => {
             alert(`옷의 카테고리 : ${JSON.stringify(res.data.result)}`)
         })
@@ -25,8 +25,8 @@ const Fashion = () => {
 
     const getClick = e => {
         e.preventDefault()
-        alert(`입력하신 정보는 \n ${JSON.stringify(test_num)} \n 이 맞습니까?`)
-        fashionGet(test_num)
+        alert(`입력하신 정보는 \n ${JSON.stringify(get_num)} \n 이 맞습니까?`)
+        fashionGet(get_num)
         .then((res)=>{
             alert(`옷의 카테고리 : ${JSON.stringify(res.data.result)}`)
         })
@@ -39,11 +39,12 @@ const Fashion = () => {
     return (
     <body>
         <h2>패션 정수 입력</h2>
-        <input type="text" name="test_num" placeholder="모델 숫자 입력" onChange={onChange}></input>
         <form method="post">
+        <input type="text" name="post_num" placeholder="모델 숫자 입력" onChange={onChange}></input>
         <button onClick={postClick}>postClick</button><br/>
         </form>
         <form method="get">
+        <input type="text" name="get_num" placeholder="모델 숫자 입력" onChange={onChange}></input>
         <button onClick={getClick}>getClick</button>
         </form>
     </body>
