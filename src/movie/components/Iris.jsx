@@ -16,14 +16,8 @@ const Iris = () => {
         const Request = {sl, sw, pl, pw}
         alert(`입력하신 정보는 \n ${JSON.stringify(Request)} \n 이 맞습니까?`)
         irisPost(Request)
-        .then((res) => {
-            console.log(`response is ${res.data.result}`)
-            localStorage.setItem('token', JSON.stringify(res.data.result))
-        })
-        .catch((err) => {
-            console.log(err)
-            alert('잘못된 접근입니다.')
-        })
+        let arr = document.getElementsByClassName('box')
+        for(let i=0; i<arr.length; i++) arr[i].value = ""
     }
 
     const getClick = e => {

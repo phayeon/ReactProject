@@ -3,7 +3,7 @@ import {Navigation2, Counter, Footer} from "cmm"
 import {Schedule} from "cop"
 import {LoginForm, SignUp} from "uat"
 import fashion from 'images/fashion.png'
-import { Stroke, Iris, Fashion } from "movie"
+import { Stroke, Iris, Fashion, Number } from "movie"
 
 
 const Home = () => {
@@ -28,6 +28,7 @@ const Home = () => {
                 <Route path="/stroke" element={<Stroke/>}></Route>
                 <Route path="/iris" element={<Iris/>}></Route>
                 <Route path="/fashion" element={<Fashion/>}></Route>
+                <Route path="/number" element={<Number/>}></Route>
             </Routes>
             </td>
         </tr>
